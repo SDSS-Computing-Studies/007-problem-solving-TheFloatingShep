@@ -10,6 +10,7 @@ def run():
     if p.pixelMatchesColor(347,450, (220,123,54)):
         p.moveTo(347,450)
         p.click(347,450)
+        time.sleep(0.2)
         while True:
             if p.pixelMatchesColor(1060,590, (224,136,74)):
                 p.moveTo(1060,590)

@@ -40,6 +40,36 @@ def managers():
 
 # Buys stuff
 def buy():
+    # Purchases
+    if p.pixelMatchesColor(690,410, (224,139,78)):
+        p.moveTo(690,410)
+        p.click(690,410)
+    if p.pixelMatchesColor(690,511, (224,139,78)):
+        p.moveTo(690,511)
+        p.click(690,511)
+    if p.pixelMatchesColor(690,609, (224,139,78)):
+        p.moveTo(690,609)
+        p.click(690,609)
+    if p.pixelMatchesColor(690,707, (224,139,78)):
+        p.moveTo(690,707)
+        p.click(690,707)
+
+    if p.pixelMatchesColor(1043,327, (224,139,78)):
+        p.moveTo(1043,327)
+        p.click(1043,327)
+    if p.pixelMatchesColor(1043,410, (224,139,78)):
+        p.moveTo(1043,410)
+        p.click(1043,410)
+    if p.pixelMatchesColor(1043,511, (224,139,78)):
+        p.moveTo(1043,511)
+        p.click(1043,511)
+    if p.pixelMatchesColor(1043,609, (224,139,78)):
+        p.moveTo(1043,609)
+        p.click(1043,609)
+    if p.pixelMatchesColor(1043,707, (224,139,78)):
+        p.moveTo(1043,707)
+        p.click(1043,707)
+
     # Upgrades
     if p.pixelMatchesColor(347,450, (220,123,54)):
         upgrades()
@@ -50,83 +80,95 @@ def buy():
 
     # All the stuff
     # Second line
-    if p.pixelMatchesColor(1037,675, (141,126,114)):
-        p.moveTo(1037,675)
-        p.click(1037,296)
+    # SHRIMP
+    if p.pixelMatchesColor(1044,675, (115,105,96)):
+        p.moveTo(1044,675)
+        p.click(1044,675)
     if p.pixelMatchesColor(1100,710, (224,136,74)):
         p.moveTo(1100,700)
         p.click(1100,700)
-
-    if p.pixelMatchesColor(1037,582, (141,126,114)):
-        p.moveTo(1037,582)
-        p.click(1037,582)
+    # HOCKEY
+    if p.pixelMatchesColor(1044,582, (115,105,96)):
+        p.moveTo(1044,582)
+        p.click(1044,582)
     if p.pixelMatchesColor(1100,610, (224,136,74)):
         p.moveTo(1100,610)
         p.click(1100,610)
-
-    if p.pixelMatchesColor(1037,487, (141,126,114)):
-        p.moveTo(1037,487)
-        p.click(1037,487)
+    # MOVIE
+    if p.pixelMatchesColor(1044,487, (115,105,96)):
+        p.moveTo(1044,487)
+        p.click(1044,487)
     if p.pixelMatchesColor(1100,510, (224,136,74)):
         p.moveTo(1100,510)
         p.click(1100,510)
-
-    if p.pixelMatchesColor(1037,393, (141,126,114)):
-        p.moveTo(1037,393)
-        p.click(1037,393)
+    # BANK
+    if p.pixelMatchesColor(1044,393, (115,105,96)):
+        p.moveTo(1044,393)
+        p.click(1044,393)
     if p.pixelMatchesColor(1100,410, (224,136,74)):
         p.moveTo(1100,410)
         p.click(1100,410)
-
-    if p.pixelMatchesColor(1037,300, (141,126,114)):
-        p.moveTo(1037,300)
-        p.click(1037,300)
+    # OIL
+    if p.pixelMatchesColor(1044,300, (115,105,96)):
+        p.moveTo(1044,300)
+        p.click(1044,300)
     if p.pixelMatchesColor(1100,330, (224,136,74)):
         p.moveTo(1100,330)
         p.click(1100,330)
 
 
     # First line
-    if p.pixelMatchesColor(664,675, (141,126,114)):
+    # DONUT
+    if p.pixelMatchesColor(677,675, (115,105,96)):
         p.moveTo(610,675)
-        p.click(610,296)
+        p.click(610,675)
     if p.pixelMatchesColor(730,710, (224,136,74)):
         p.moveTo(730,710)
         p.click(730,710)
-
-    if p.pixelMatchesColor(664,582, (141,126,114)):
-        p.moveTo(610,582)
-        p.click(610,582)
-    if p.pixelMatchesColor(730,610, (141,126,114)):
+    # PIZZA
+    if p.pixelMatchesColor(677,580, (115,105,96)):
+        p.moveTo(610,580)
+        p.click(610,580)
+    if p.pixelMatchesColor(730,610, (224,136,74)):
         p.moveTo(730,610)
         p.click(730,610)
-
-    if p.pixelMatchesColor(664,487, (141,126,114)):
+    # CAR
+    if p.pixelMatchesColor(677,487, (115,105,96)):
         p.moveTo(610,487)
         p.click(610,487)
     if p.pixelMatchesColor(730,510, (224,136,74)):
         p.moveTo(730,510)
         p.click(730,510)
-
-    if p.pixelMatchesColor(664,393, (141,126,114)):
+    # NEWS
+    if p.pixelMatchesColor(677,393, (115,105,96)):
         p.moveTo(610,393)
         p.click(610,393)
     if p.pixelMatchesColor(730,410, (224,136,74)):
         p.moveTo(730,410)
         p.click(730,410)
-
-    if p.pixelMatchesColor(664,300, (141,126,114)):
+    # LEMONADE    
+    if p.pixelMatchesColor(667,298, (115,105,96)):
         p.moveTo(610,300)
         p.click(610,300)
     if p.pixelMatchesColor(730,330, (224,136,74)):
         p.moveTo(730,330)
         p.click(730,330)
+    
+    # Popup tutorials
+    while p.pixelMatchesColor(1191,205, (131,176,70)):
+        p.moveTo(1249,198)
+        p.click(1249,198)
+        time.sleep(0.4)
+    if p.pixelMatchesColor(1249,198, (224,139,78)):
+        p.moveTo(1249,198)
+        p.click(1249,198)
+        time.sleep(0.4)
 
 # Loops program
 def run():
     while True:
         buy()
-        time.sleep(15)
+        time.sleep(0.5)
 
 # Changes buy to MAX and then runs
 def start():

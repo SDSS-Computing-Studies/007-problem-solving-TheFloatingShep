@@ -5,21 +5,27 @@ import pyautogui as p
 
 p.mouseInfo()
 
+def upgrades():
+    p.moveTo(347,450)
+    p.click(347,450)
+    time.sleep(0.5)
+    while True:
+        if p.pixelMatchesColor(1060,590, (225,137,74)):
+            p.moveTo(1060,590)
+            p.click(1060,590)
+
+def managers():
+    p.moveTo(347,520)
+    p.click(347,520)
+
 def run():
     # Upgrades
     if p.pixelMatchesColor(347,450, (220,123,54)):
-        p.moveTo(347,450)
-        p.click(347,450)
-        time.sleep(0.2)
-        while True:
-            if p.pixelMatchesColor(1060,590, (224,136,74)):
-                p.moveTo(1060,590)
-                p.click(1060,590)
+        upgrades()
 
     # Managers
     if p.pixelMatchesColor(347,520, (220,123,54)):
-        p.moveTo(347,520)
-        p.click(347,520)
+        managers()
 
     p.moveTo(980,675)
     if p.pixelMatchesColor(1100,710, (224,136,74)):

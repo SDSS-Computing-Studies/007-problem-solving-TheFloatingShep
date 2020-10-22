@@ -17,6 +17,7 @@ def upgrades():
             p.moveTo(1256,235)
             time.sleep(0.5)
         else:
+            p.moveTo(1256,235)
             p.click(1256,235)
             break
 
@@ -35,6 +36,7 @@ def managers():
                 p.moveTo(930,380)
                 p.click(930,380)
         else:
+            p.moveTo(1256,235)
             p.click(1256,235)
             break
 

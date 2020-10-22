@@ -5,6 +5,8 @@ import pyautogui as p
 
 p.mouseInfo()
 
+x = 0.3
+
 # Buys upgrades
 def upgrades():
     p.moveTo(347,450)
@@ -42,35 +44,45 @@ def managers():
 
 # Buys stuff
 def buy():
+    global x
     # Purchases
     if p.pixelMatchesColor(690,410, (224,139,78)):
         p.moveTo(690,410)
         p.click(690,410)
+        x = 3
     if p.pixelMatchesColor(690,511, (224,139,78)):
         p.moveTo(690,511)
         p.click(690,511)
+        x = 5
     if p.pixelMatchesColor(690,609, (224,139,78)):
         p.moveTo(690,609)
         p.click(690,609)
+        x = 10
     if p.pixelMatchesColor(690,707, (224,139,78)):
         p.moveTo(690,707)
         p.click(690,707)
+        x = 20
 
     if p.pixelMatchesColor(1043,327, (224,139,78)):
         p.moveTo(1043,327)
         p.click(1043,327)
+        x = 30
     if p.pixelMatchesColor(1043,410, (224,139,78)):
         p.moveTo(1043,410)
         p.click(1043,410)
+        x = 50
     if p.pixelMatchesColor(1043,511, (224,139,78)):
         p.moveTo(1043,511)
         p.click(1043,511)
+        x = 90
     if p.pixelMatchesColor(1043,609, (224,139,78)):
         p.moveTo(1043,609)
         p.click(1043,609)
+        x = 150
     if p.pixelMatchesColor(1043,707, (224,139,78)):
         p.moveTo(1043,707)
         p.click(1043,707)
+        x = 500
 
     # Upgrades
     if p.pixelMatchesColor(347,450, (220,123,54)):
@@ -168,9 +180,10 @@ def buy():
 
 # Loops program
 def run():
+    global x
     while True:
         buy()
-        time.sleep(0.3)
+        time.sleep(x)
 
 # Changes buy to MAX and then runs
 def start():

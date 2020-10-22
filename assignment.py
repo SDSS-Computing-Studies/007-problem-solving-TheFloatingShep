@@ -170,7 +170,7 @@ def buy():
 def run():
     while True:
         buy()
-        time.sleep(0.5)
+        time.sleep(0.3)
 
 # Changes buy to MAX and then runs
 def start():

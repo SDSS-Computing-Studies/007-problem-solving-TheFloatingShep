@@ -82,17 +82,17 @@ def buy():
 
     # All the stuff
     # Second line
-    # SHRIMP
+    # OIL
     if p.pixelMatchesColor(1044,675, (115,105,96)):
         p.moveTo(1044,675)
         p.click(1044,675)
     if p.pixelMatchesColor(1100,710, (224,136,74)):
         p.moveTo(1100,700)
         p.click(1100,700)
-    # HOCKEY
-    if p.pixelMatchesColor(1044,582, (115,105,96)):
-        p.moveTo(1044,582)
-        p.click(1044,582)
+    # BANK
+    if p.pixelMatchesColor(1044,580, (115,105,96)):
+        p.moveTo(1044,580)
+        p.click(1044,580)
     if p.pixelMatchesColor(1100,610, (224,136,74)):
         p.moveTo(1100,610)
         p.click(1100,610)
@@ -103,17 +103,17 @@ def buy():
     if p.pixelMatchesColor(1100,510, (224,136,74)):
         p.moveTo(1100,510)
         p.click(1100,510)
-    # BANK
+    # HOCKEY
     if p.pixelMatchesColor(1044,393, (115,105,96)):
         p.moveTo(1044,393)
         p.click(1044,393)
     if p.pixelMatchesColor(1100,410, (224,136,74)):
         p.moveTo(1100,410)
         p.click(1100,410)
-    # OIL
-    if p.pixelMatchesColor(1044,300, (115,105,96)):
-        p.moveTo(1044,300)
-        p.click(1044,300)
+    # SHRIMP
+    if p.pixelMatchesColor(1044,298, (115,105,96)):
+        p.moveTo(1044,298)
+        p.click(1044,298)
     if p.pixelMatchesColor(1100,330, (224,136,74)):
         p.moveTo(1100,330)
         p.click(1100,330)
@@ -150,8 +150,8 @@ def buy():
         p.click(730,410)
     # LEMONADE    
     if p.pixelMatchesColor(667,298, (115,105,96)):
-        p.moveTo(610,300)
-        p.click(610,300)
+        p.moveTo(610,298)
+        p.click(610,298)
     if p.pixelMatchesColor(730,330, (224,136,74)):
         p.moveTo(730,330)
         p.click(730,330)

@@ -5,7 +5,7 @@ import pyautogui as p
 
 p.mouseInfo()
 
-x = 50
+x = 1
 
 # Buys upgrades
 def upgrades():
